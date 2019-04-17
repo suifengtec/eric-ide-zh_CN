@@ -34,6 +34,23 @@ cp D:\tools\python36\Lib\site-packages\eric6\i18n\eric-ide-zh_CN\v6\eric6_zh_CN.
 
 ```
 
+## 统计脚本
+位置
+```
+
+D:\tools\python36\Lib\site-packages\eric6\i18n\eric-ide-zh_CN\v6\
+
+```
+执行
+```bash
+
+python counter eric6_zh_CN.ts
+# if need to save strings to a file?
+python counter eric6_zh_CN.ts true
+
+```
+
+
 
 
 
