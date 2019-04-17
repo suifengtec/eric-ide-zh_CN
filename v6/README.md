@@ -32,3 +32,16 @@ python messageParser.py fortest.ts
 python messageParser.py fortest.ts true
 ```
 
+## eric6_zh_CN.ts
+
+Eric 6 (19.04) 的简体中文语言包;
+
+## eric6_zh_CN.qm
+
+上面那个文件编译过后的文件,可以放在 Eric 6 安装目录下的`i18n`目录中,例如
+```
+D:\tools\eric6-19.04\eric\i18n
+```
+
+重启 Eric, 可见到效果。
+
