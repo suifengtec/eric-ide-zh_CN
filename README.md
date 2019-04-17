@@ -49,7 +49,7 @@ Eric 装在下面的位置:
 D:\tools\python36\Lib\site-packages\eric6\i18n
 
 ```
-假装 tsTranslator 的位置在：
+项目 tsTranslator 的位置在：
 ```
 
 Y:\pyqt\tsTranslaTor
