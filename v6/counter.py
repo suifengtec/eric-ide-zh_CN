@@ -2,7 +2,7 @@
 # @Author: suifengtec
 # @Date:   2019-04-17 17:51:45
 # @Last Modified by:    suifengtec
-# @Last Modified time: 2019-04-17 23:29:46
+# @Last Modified time: 2019-04-18 00:57:03
 '''
 
 parse eric i18n file.
@@ -118,8 +118,9 @@ class ParseEric6I18nFile:
             filePath = join(getcwd(), fileName)
             with open(filePath, "w", encoding="utf-8") as fp:
                 if isinstance(content, list):
-                    contentInStr = "\n".join(content)
-                    fp.write(contentInStr)
+                    #contentInStr = "\n".join(content)
+                    # fp.write(contentInStr)
+                    fp.writelines(content)
                 elif isinstance(content, list):
                     fp.write(content)
             return True
