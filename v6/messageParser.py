@@ -2,7 +2,7 @@
 # @Author: suifengtec
 # @Date:   2019-04-18 01:54:16
 # @Last Modified by:    suifengtec
-# @Last Modified time: 2019-04-18 03:39:47
+# @Last Modified time: 2019-04-18 03:43:40
 from os import (getcwd, access, R_OK)
 from os.path import (isfile, join)
 import regex
@@ -30,10 +30,10 @@ self.isMsgTranslated
 
 具体步骤
 
-1. 打开文件,解析message(注释,原文,译文,是否被翻译),并记录message内的额外的location;
-2. 然后解析这个list,把是message的行,抽取出来,称为listMessages;
-3. 把 listMessages 提供给 QTableWidget 显示,并让使用者可以进行编辑,编辑后的行,更新listMessages;
-4. 当保存文件时, 循环listMessages,把响应的内容,写入到对应的行。
+1. 打开文件,解析message(注释,原文,译文,是否被翻译),并记录message到self.listMsgs,
+在循环每一行的同时,把每一行都记录在self.listAllLines;
+3. 把 self.listMsgs 提供给 QTableWidget 显示,并记录使用者的更改;
+4. 当保存文件时, 循环self.listMsgs,把相应的翻译过的内容,写入到对应的行。
 
 [
 self.msgComment,
@@ -292,11 +292,12 @@ def main():
 if __name__ == "__main__":
     main()
 
-'''
+'''使用
 
+
+python messageParser.py fortest.ts
 python messageParser.py fortest.ts true
 
 
 
-[description]
 '''
