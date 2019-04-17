@@ -6,13 +6,6 @@
 本项目维护其简体中文翻译包。
 
 
-## 使用
-加入你的 Eric 装在下面的位置:
-```
-D:\tools\python36\Lib\site-packages\eric6\i18n
-
-```
-那么,打开Eric,在菜单""
 
 
 ## ts 和 qm 是什么
@@ -50,3 +43,15 @@ cp D:\tools\python36\Lib\site-packages\eric6\i18n\eric-ide-zh_CN\v6\eric6_zh_CN.
 
 
 
+## 备忘
+Eric 装在下面的位置:
+```
+D:\tools\python36\Lib\site-packages\eric6\i18n
+
+```
+假装 tsTranslator 的位置在：
+```
+
+Y:\pyqt\tsTranslaTor
+
+```
