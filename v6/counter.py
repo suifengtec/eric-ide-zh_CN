@@ -2,7 +2,7 @@
 # @Author: suifengtec
 # @Date:   2019-04-17 17:51:45
 # @Last Modified by:    suifengtec
-# @Last Modified time: 2019-04-18 00:57:03
+# @Last Modified time: 2019-04-18 02:18:35
 '''
 
 parse eric i18n file.
@@ -20,16 +20,16 @@ from sys import exit
 class ParseEric6I18nFile:
     def __init__(self, fileName):
 
-        self.theFiles = []
-        self.translationLines = []
-        self.linesNeedToBeTranslated = []
-
         filePath = join(getcwd(), fileName)
         if self.isFileReadable(filePath):
             self.fileName = filePath
         else:
             self.fileName = None
             print("未找到文件！！")
+            exit(1)
+        self.theFiles = []
+        self.translationLines = []
+        self.linesNeedToBeTranslated = []
 
     def isFileReadable(self, fileName):
         try:
@@ -68,7 +68,7 @@ class ParseEric6I18nFile:
 
         return matchFilePath in self.theFiles
 
-    def read(self, shouldOutPutToFile):
+    def fire(self, shouldOutPutToFile):
 
         if self.fileName is None:
             print("文件名为空?")
@@ -118,9 +118,9 @@ class ParseEric6I18nFile:
             filePath = join(getcwd(), fileName)
             with open(filePath, "w", encoding="utf-8") as fp:
                 if isinstance(content, list):
-                    #contentInStr = "\n".join(content)
-                    # fp.write(contentInStr)
-                    fp.writelines(content)
+                    contentInStr = "\n".join(content)
+                    fp.write(contentInStr)
+                    # fp.writelines(content)
                 elif isinstance(content, list):
                     fp.write(content)
             return True
@@ -153,7 +153,7 @@ def main():
         if len(args) > 1 and args[1] == "true":
             shouldOutPutToFile = True
         h = ParseEric6I18nFile(i18nFile)
-        h.read(shouldOutPutToFile)
+        h.fire(shouldOutPutToFile)
     except Exception as e:
         print(e)
 
