@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\Directory\Background\shell\eric6]
+@="Open Eric6"
+"Icon"="D:\\tools\\python36\\Lib\site-packages\\eric6\\pixmaps\\eric6.ico,0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\eric6\command]
+@="D:\\tools\\python36\\Scripts\\eric6.exe"
