@@ -5,9 +5,6 @@
 
 本项目维护其简体中文翻译包。
 
-
-
-
 ## ts 和 qm 是什么
 
 都是 Qt 的国际化/本地化(i18n)文件, ts 是可编辑的文件, qm 是编译后的文件格式。
@@ -15,10 +12,10 @@
 ts 采用的是类 xml 的语法的文件;
 qm 是二进制的文件;
 
-
-
 ## ts=>qm
+
 使用 lconvert:
+
 ```bash
 # run the following command to find lconvert
 where lconvert
@@ -35,13 +32,17 @@ cp D:\tools\python36\Lib\site-packages\eric6\i18n\eric-ide-zh_CN\v6\eric6_zh_CN.
 ```
 
 ## 统计脚本
+
 位置
+
+```bash
+
+start D:\tools\python36\Lib\site-packages\eric6\i18n\eric-ide-zh_CN\v6\
+
 ```
 
-D:\tools\python36\Lib\site-packages\eric6\i18n\eric-ide-zh_CN\v6\
-
-```
 执行
+
 ```bash
 
 python counter eric6_zh_CN.ts
@@ -59,7 +60,7 @@ python counter eric6_zh_CN.ts true
 已经翻译了 941 行
 完成度 0.0563574294783494%。
 
-![screenshot/0002.png](./screenshot/0001.png)
+![screenshot/0002.png](./screenshot/0002.png)
 
 ## 工具
 
@@ -67,14 +68,15 @@ python counter eric6_zh_CN.ts true
 ![screenshot/0001.png](./screenshot/0001.png)
 
 ## 备忘
+
 Eric 装在下面的位置:
 ```
-D:\tools\python36\Lib\site-packages\eric6\i18n
+start D:\tools\python36\Lib\site-packages\eric6\i18n
 
 ```
 项目 tsTranslator 的位置在：
 ```
 
-Y:\pyqt\tsTranslaTor
+start Y:\pyqt\tsTranslaTor
 
 ```
