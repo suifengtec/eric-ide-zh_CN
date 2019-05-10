@@ -64,6 +64,20 @@ python counter eric6_zh_CN.ts true
 
 ![screenshot/0002.png](./screenshot/0002.png)
 
+## 使用
+
+```bash
+# clone 项目到本地,并进入到 qm 所在目录
+git clone https://github.com/suifengtec/eric-ide-zh_CN && cd eric-ide-zh_CN/v6
+
+# 复制 qm 文件到 eric6 的 i18n 目录
+cp eric6_zh_CN.qm [这里是你的Python的安装路径]\Lib\site-packages\eric6\i18n
+# 复制 qm 文件的示例
+# cp eric6_zh_CN.qm D:\tools\python36\Lib\site-packages\eric6\i18n
+
+```
+
+
 ## 工具
 
 鉴于 Qt 语言大师的难用,我翻译了一百多行常用的,后续将会写一个GUI程序,以实现自动翻译,开发版本大致长这样吧:
@@ -72,12 +86,14 @@ python counter eric6_zh_CN.ts true
 ## 备忘
 
 Eric 装在下面的位置:
-```
+```bash
 start D:\tools\python36\Lib\site-packages\eric6\i18n
 
 ```
+
 项目 tsTranslator 的位置在：
-```
+
+```bash
 
 start Y:\pyqt\tsTranslaTor
 
